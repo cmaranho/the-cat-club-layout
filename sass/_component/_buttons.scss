@@ -1,0 +1,19 @@
+.button-base {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    background-color: #CC6636;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: .8em;
+    padding: $padding-base - 2;
+    border-radius: 20px;
+    transition: .3s;
+    &:hover {
+        opacity: .5;
+        transition: .3s
+    }
+}

@@ -1,0 +1,55 @@
+.row{
+    @include flexRow;
+   
+    @media (max-width: 680px) {
+        @include flexColumn;
+    }
+}
+
+.row-reverse{
+    @include flexRowReverse;
+    @media (max-width: 680px) {
+        @include flexColumn;
+    }
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-9{
+    width: 88.8888%;
+}
+
+.col-7{
+    width: 81.7142%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-mb-6{
+    width: 50%;
+    @media (max-width: 680px) {
+        width: 100%;;
+    }
+}
+
+.col-8{
+    width: 87.5%;
+
+}
+
+.col-3{
+    width: 33.3333%;
+}
+
+.col-mb-3{
+
+    width: 33.3333%;
+    @media (max-width: 680px) {
+        width: 100%;;
+    }
+}
+

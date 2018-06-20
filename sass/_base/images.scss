@@ -1,0 +1,12 @@
+.img-fluid {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: .3s;
+    z-index: 1;
+    &:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+}

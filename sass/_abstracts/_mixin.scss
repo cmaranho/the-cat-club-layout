@@ -1,0 +1,28 @@
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@mixin flexRowReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+@mixin parallax {
+    background-position: center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*fixed activates parallax */
+    background-attachment: fixed;
+}
