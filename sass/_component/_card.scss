@@ -1,20 +1,39 @@
 .big-card{
-   @include flexRow;
+   @include flexColumn;
    justify-content: center;
    align-items: center;
     width: 90%;
-    height: 750px;
+    height: auto;
     background-color: rgba(204, 98, 52, 0.856); 
+    @media (max-width: 680px) {
+       
+        width: 100%;
+    
+    }
 }
 
 .card-map{
-    width: 530px;
+    margin: 20px;
     height: 530px;
     background-color: rgb(126, 62, 34); 
+    @media (max-width: 680px) {
+        @include flexColumn;
+        width: 90%;
+       
+    }
 }
 
-.form-card{
+.card-infoContact{
     @include flexRow;
-    width: 30%;
-    height: auto;
+    @media (max-width: 680px) {
+        @include flexColumn;
+        width: 100%;
+    
+    }
 }
+
+.card-infoAdress{
+    height: 200px;
+    background-color: aqua;
+}
+

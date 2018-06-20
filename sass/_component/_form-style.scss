@@ -1,0 +1,105 @@
+.form-card {
+    @include flexRow;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 40%;
+    height: auto;
+    fieldset {
+        border: none;
+    }
+    legend {
+        font-size: 1.4em;
+        color: $color-white;
+        margin: 10px 0px 10px 0px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="time"],
+    input[type="url"],
+    input[type="tel"],
+    textarea,
+    select {
+        font-family: "Roboto", Times, serif;
+        background: rgba(255, 255, 255, .1);
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: 0;
+        outline: 0;
+        padding: 7px;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: #e8eeef;
+        color: #8a97a0;
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        margin-bottom: 30px;
+    }
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    input[type="datetime"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="time"]:focus,
+    input[type="url"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus,
+    select:focus {
+        background: #d2d9dd;
+    }
+    select {
+        -webkit-appearance: menulist-button;
+        height: 35px;
+    }
+    .number {
+        background: rgb(26, 188, 156);
+        color: rgb(255, 255, 255);
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        font-size: 0.8em;
+        margin-right: 4px;
+        line-height: 30px;
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+        border-radius: 15px 15px 15px 0px;
+    }
+ 
+    input[type="submit"],
+    input[type="button"] {
+        width: 200px;
+    height: 40px;
+    margin: 10px;
+    background-color: #CC6636;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: .8em;
+    padding: $padding-base - 2;
+    border-radius: 20px;
+    transition: .3s;
+    &:hover {
+        opacity: .5;
+        transition: .3s
+    }
+    }
+    input[type="submit"]:hover,
+    input[type="button"]:hover {
+        background: #109177;
+    }
+    @media (max-width: 680px) {
+        @include flexColumn;
+        width: 90%;
+        height: auto;
+    }
+}
