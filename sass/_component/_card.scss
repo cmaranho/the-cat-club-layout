@@ -1,6 +1,20 @@
 .big-card{
-    display: flex;
-    width: 87%;
+   @include flexRow;
+   justify-content: center;
+   align-items: center;
+    width: 90%;
     height: 750px;
     background-color: rgba(204, 98, 52, 0.856); 
+}
+
+.card-map{
+    width: 530px;
+    height: 530px;
+    background-color: rgb(126, 62, 34); 
+}
+
+.form-card{
+    @include flexRow;
+    width: 30%;
+    height: auto;
 }
