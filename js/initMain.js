@@ -1,1 +1,0 @@
-var initMainJS = new MainClass();
