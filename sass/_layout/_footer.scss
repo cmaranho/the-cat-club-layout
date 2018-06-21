@@ -1,5 +1,12 @@
 footer{
+    display: flex;
     width: 100%;
-    height: 80px;
-    background-color: rgb(204, 98, 52); 
+    height: 60px;
+    padding: $padding-base;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(204, 98, 52);
+    p{
+        color: #333333;
+    } 
 }
