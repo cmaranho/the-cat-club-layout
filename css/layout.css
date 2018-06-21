@@ -1,5 +1,6 @@
 /*Import*/
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,500");
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -236,6 +237,11 @@ address {
   transition: .3s; }
   .card-hoverImage p {
     color: white; }
+  @media (max-width: 680px) {
+    .card-hoverImage {
+      display: flex;
+      flex-direction: column;
+      top: 20%; } }
 
 .flex {
   flex: 1; }

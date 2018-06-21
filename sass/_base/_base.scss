@@ -76,6 +76,7 @@ address {
     &:hover .card-hoverImage {
         top: 12%;
         transition: .3s;
+        
     }
     &:hover .img-fluid {
         transform: scale(1.1);
@@ -97,6 +98,11 @@ address {
     transition: .3s;
     p {
         color: $color-white;
+    }
+    @media (max-width: 680px) {
+        @include flexColumn;
+        top: 20%;
+    
     }
 }
 
