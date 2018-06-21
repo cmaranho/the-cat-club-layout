@@ -34,8 +34,6 @@
 
 .card-infoAdress{
     @include flexRow;
-    justify-content: center;
-    align-items: center;
     height: 200px;
     margin: 15px;
     padding: $padding-base;
@@ -43,8 +41,6 @@
 
 .card-infoAdress--content{
     display: flex;
-    justify-content: center;
-    align-items: center;
    
 }
 
