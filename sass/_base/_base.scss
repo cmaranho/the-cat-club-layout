@@ -9,6 +9,21 @@ section {
     height: auto;
 }
 
+address {
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.5em;
+    a {
+        color: $color-smoothDark;
+    }
+    b {
+        color: $color-mediumDark;
+    }
+    p {
+        color: $color-smoothDark;
+    }
+}
+
 .base-section {
     position: relative;
     height: 433px;
@@ -34,7 +49,7 @@ section {
     p {
         color: #392D2D;
     }
-    h1{
+    h1 {
         padding-top: 15px;
     }
 }
@@ -43,6 +58,10 @@ section {
     display: flex;
     flex-direction: column;
     padding: $padding-base;
+
+    h1{
+        padding-top: 20px; 
+    }
 }
 
 .content-card {

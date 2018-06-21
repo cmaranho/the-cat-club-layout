@@ -60,7 +60,7 @@
         height: 35px;
     }
     .number {
-        background: rgb(26, 188, 156);
+        background: #392D2D;
         color: rgb(255, 255, 255);
         height: 30px;
         width: 30px;
@@ -95,7 +95,7 @@
     }
     input[type="submit"]:hover,
     input[type="button"]:hover {
-        background: #109177;
+        background: #392D2D;
     }
     @media (max-width: 680px) {
         @include flexColumn;
