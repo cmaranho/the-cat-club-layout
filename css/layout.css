@@ -97,8 +97,7 @@ nav {
         transition: .3s; }
         nav ul li:hover a {
           color: white;
-          transform: translate3d(23, 22, 12);
-          border-bottom: 1px solid white; }
+          transform: translate3d(23, 22, 12); }
   nav.navColor {
     background-color: rgba(255, 255, 255, 0.897);
     box-shadow: 1px 2px 11px #4e4e4e;
