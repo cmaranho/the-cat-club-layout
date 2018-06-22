@@ -90,7 +90,8 @@ nav {
     }
 }
 
-.HideNVHB {
-    right: -100%;
-    transition: .5s;
+.menu-hb {
+    @media (min-width: 680px) {
+        display: none;
+    }
 }

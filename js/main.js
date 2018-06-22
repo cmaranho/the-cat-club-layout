@@ -42,13 +42,13 @@ initMap = () => {
 buttomMenuHanburguer = () => {
 
   let clickBtnHB = document.getElementById('touch-btnHb');
-
   let showMenuHB = document.getElementById('getMenuHB');
   let closeMenuHB = document.querySelectorAll('a.close');
 
   clickBtnHB.addEventListener('click', () => {
-    showMenuHB.style.right = "0%"
-    showMenuHB.style.transition = ".5s";
+    showMenuHB.setAttribute(
+      "style", `right: 0%;
+       transition: .5s`)
 
   })
 
@@ -56,15 +56,15 @@ buttomMenuHanburguer = () => {
 
     index.addEventListener('click', () => {
 
-      showMenuHB.style.right = "-100%"
-      showMenuHB.style.transition = "1s";
+      showMenuHB.setAttribute(
+        "style", `right: -100%;
+         transition: .8s`)
 
     })
     console.log(index);
   })
 
 }
-
 
 scrollFN()
 buttomMenuHanburguer()

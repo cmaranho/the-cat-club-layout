@@ -151,9 +151,9 @@ nav {
           color: white;
           transform: translate3d(23, 22, 12); }
 
-.HideNVHB {
-  right: -100%;
-  transition: .5s; }
+@media (min-width: 680px) {
+  .menu-hb {
+    display: none; } }
 
 main {
   width: 100%;
@@ -164,13 +164,13 @@ main {
 footer {
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 40px;
   padding: 3%;
   justify-content: center;
   align-content: center;
-  background-color: #cc6234; }
+  background-color: #2b2522; }
   footer p {
-    color: #333333; }
+    color: #838383; }
 
 a {
   text-decoration: none;
@@ -304,7 +304,7 @@ address {
 .img-small {
   width: 60px;
   height: 60px;
-  margin: 15px;
+  margin: 10px;
   transition: .3s; }
   .img-small:hover {
     opacity: .8;
