@@ -57,7 +57,7 @@ buttomMenuHanburguer = () => {
     index.addEventListener('click', () => {
 
       showMenuHB.style.right = "-100%"
-      showMenuHB.style.transition = "1.2s";
+      showMenuHB.style.transition = "1s";
 
     })
     console.log(index);
