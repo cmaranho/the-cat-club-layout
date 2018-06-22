@@ -36,8 +36,35 @@ initMap = () => {
   marker.addListener('click', function () {
     infowindow.open(map, marker);
   });
+};
+
+
+buttomMenuHanburguer = () => {
+
+  let clickBtnHB = document.getElementById('touch-btnHb');
+
+  let showMenuHB = document.getElementById('getMenuHB');
+  let closeMenuHB = document.querySelectorAll('a.close');
+
+  clickBtnHB.addEventListener('click', () => {
+    showMenuHB.style.right = "0%"
+    showMenuHB.style.transition = ".5s";
+
+  })
+
+  closeMenuHB.forEach((index) => {
+
+    index.addEventListener('click', () => {
+
+      showMenuHB.style.right = "-100%"
+      showMenuHB.style.transition = "1.2s";
+
+    })
+    console.log(index);
+  })
+
 }
 
+
 scrollFN()
-
-
+buttomMenuHanburguer()

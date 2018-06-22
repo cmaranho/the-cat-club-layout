@@ -1,5 +1,6 @@
 nav {
     @include flexRowReverse;
+    position: relative;
     width: 100%;
     height: 80px;
     position: fixed;
@@ -21,6 +22,11 @@ nav {
                 a {
                     color: $color-white;
                     transform: translate3d(23, 22, 12);
+                }
+            }
+            &:not(.menu-hb) {
+                @media (max-width: 680px) {
+                    display: none;
                 }
             }
         }
@@ -48,4 +54,43 @@ nav {
             color: $color-white;
         }
     }
+}
+
+.nv-hamburguer {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    padding: $padding-base;
+    background-color: $color-white;
+    right: -100%;
+    z-index: 6;
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        li {
+            width: 100%;
+            display: flex;
+            text-justify: center;
+            padding: 25px;
+            list-style: none;
+            transition: .3s;
+            &:hover {
+                cursor: pointer;
+                background: #333333;
+                transition: .3s;
+                a {
+                    text-justify: center;
+                    color: $color-white;
+                    transform: translate3d(23, 22, 12);
+                }
+            }
+        }
+    }
+}
+
+.HideNVHB {
+    right: -100%;
+    transition: .5s;
 }
